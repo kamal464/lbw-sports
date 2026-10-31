@@ -5,6 +5,7 @@ import { BatShowcase } from '@/components/home/BatShowcase'
 import { BallSection } from '@/components/home/BallSection'
 import { CategoryGrid } from '@/components/home/CategoryGrid'
 import { BrandStory } from '@/components/home/BrandStory'
+import { FranchiseOpportunity } from '@/components/home/FranchiseOpportunity'
 import { MotionMarquee } from '@/components/motion/MotionMarquee'
 
 export default function HomePage() {
@@ -13,6 +14,7 @@ export default function HomePage() {
       <PageLoader />
       <Hero />
       <MotionMarquee />
+      <FranchiseOpportunity />
       <ScrollJourney />
       <BatShowcase />
       <BallSection />

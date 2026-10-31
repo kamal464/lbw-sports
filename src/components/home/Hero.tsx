@@ -69,6 +69,9 @@ export function Hero() {
           <MagneticButton href={whatsappUrl()} external variant="whatsapp">
             Enquire on WhatsApp
           </MagneticButton>
+          <MagneticButton href="/franchise" variant="orange">
+            Franchise opportunity
+          </MagneticButton>
           <MagneticButton href="/shop" variant="ghost-light">
             Browse gear
           </MagneticButton>

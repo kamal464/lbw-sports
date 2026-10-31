@@ -56,6 +56,7 @@ export function Footer() {
           <ul className="mt-4 space-y-2 text-sm text-white/65">
             {[
               ['/', 'Home'],
+              ['/franchise', 'Franchise'],
               ['/shop', 'Gear'],
               ['/about', 'About'],
               ['/contact', 'Contact'],

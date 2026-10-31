@@ -12,6 +12,7 @@ import { clsx } from 'clsx'
 
 const links = [
   { href: '/', label: 'Home' },
+  { href: '/franchise', label: 'Franchise' },
   { href: '/shop', label: 'Gear' },
   { href: '/shop/cricket', label: 'Cricket' },
   { href: '/#sports', label: 'Sports' },
