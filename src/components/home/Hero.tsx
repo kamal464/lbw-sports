@@ -19,7 +19,7 @@ export function Hero() {
       <div className="absolute inset-0 bg-pitch-deep/45" />
       <div className="absolute inset-0 bg-gradient-to-t from-pitch-deep via-pitch-deep/55 to-pitch-deep/25" />
 
-      <div className="relative z-10 mx-auto flex min-h-dvh max-w-7xl flex-col justify-end px-5 pb-8 pt-28 md:px-8 md:pb-10 md:pt-32">
+      <div className="relative z-10 mx-auto flex min-h-dvh max-w-7xl flex-col justify-end px-5 pb-8 pt-32 md:px-8 md:pb-10 md:pt-40">
         <motion.div
           className="flex flex-wrap items-center gap-x-4 gap-y-2 text-[11px] font-bold uppercase tracking-[0.32em] text-white/70"
           initial={{ opacity: 0, y: 10 }}

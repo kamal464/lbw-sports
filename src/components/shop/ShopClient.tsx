@@ -35,7 +35,7 @@ export function ShopClient({ initialCategory, initialQuery = '' }: Props) {
     : 'All gear'
 
   return (
-    <div className="mx-auto max-w-7xl px-4 pb-24 pt-32 md:px-6 md:pt-36">
+    <div className="mx-auto max-w-7xl px-4 pb-24 pt-36 md:px-6 md:pt-40">
       <div className="mb-10 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
         <div>
           <p className="text-sm font-bold uppercase tracking-[0.3em] text-orange">Gear</p>

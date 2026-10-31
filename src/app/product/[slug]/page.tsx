@@ -42,7 +42,7 @@ export default async function ProductPage({ params }: Props) {
   const sport = categories.find((item) => item.slug === product.category)
 
   return (
-    <div className="mx-auto grid max-w-7xl gap-10 px-4 pb-24 pt-32 md:grid-cols-2 md:px-6 md:pt-36">
+    <div className="mx-auto grid max-w-7xl gap-10 px-4 pb-24 pt-36 md:grid-cols-2 md:px-6 md:pt-40">
       <div className="relative aspect-[4/5] overflow-hidden border border-foreground/10 bg-mist">
         <img src={product.image} alt={product.name} className="h-full w-full object-cover" />
       </div>

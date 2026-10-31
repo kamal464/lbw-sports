@@ -42,6 +42,35 @@ body {
   font-family: var(--font-display), Impact, sans-serif;
 }
 
+.lbw-topbar {
+  background:
+    linear-gradient(90deg, rgba(224, 176, 0, 0.18), transparent 22%, transparent 78%, rgba(224, 176, 0, 0.18)),
+    linear-gradient(180deg, #15265f 0%, #1c2f7a 55%, #10204f 100%);
+  border-bottom: 1px solid rgba(224, 176, 0, 0.35);
+}
+
+.lbw-topbar-shine {
+  background: linear-gradient(
+    105deg,
+    transparent 35%,
+    rgba(255, 236, 150, 0.16) 48%,
+    transparent 62%
+  );
+  animation: topbar-shine 7s ease-in-out infinite;
+}
+
+@keyframes topbar-shine {
+  0%,
+  100% {
+    transform: translateX(-18%);
+    opacity: 0.45;
+  }
+  50% {
+    transform: translateX(18%);
+    opacity: 0.9;
+  }
+}
+
 .grain {
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.4'/%3E%3C/svg%3E");
   mix-blend-mode: soft-light;
@@ -427,6 +456,7 @@ body {
   .marquee-track,
   .live-dot,
   .hero-corner,
+  .lbw-topbar-shine,
   html {
     animation: none !important;
     scroll-behavior: auto;
