@@ -26,7 +26,10 @@ export const stores = [
 export const brand = {
   name: 'LBW Sports Shop',
   shortName: 'LBW Sports',
-  fullForm: 'Life Better With Sports',
+  fullForm: 'Life is better with sports',
+  cricketBrand: 'X-FORCZ',
+  cricketBrandMark: '/brand/x-forcz.png',
+
   domain: 'lbwsports.in',
   instagram: 'https://instagram.com/lbw__sports',
   instagramHandle: '@lbw__sports',

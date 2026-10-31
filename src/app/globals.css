@@ -49,6 +49,38 @@ body {
   border-bottom: 1px solid rgba(224, 176, 0, 0.35);
 }
 
+.xforcz-topbar {
+  background:
+    linear-gradient(90deg, rgba(245, 215, 110, 0.2), transparent 24%, transparent 76%, rgba(245, 215, 110, 0.2)),
+    linear-gradient(180deg, #1a1408 0%, #0a0a0a 50%, #000 100%);
+  border-bottom: 1px solid rgba(201, 162, 39, 0.55);
+}
+
+.xforcz-topbar-shine {
+  background: linear-gradient(
+    105deg,
+    transparent 35%,
+    rgba(245, 215, 110, 0.22) 48%,
+    transparent 62%
+  );
+  animation: topbar-shine 7s ease-in-out infinite;
+}
+
+.xforcz-page {
+  background:
+    radial-gradient(ellipse 70% 45% at 80% 0%, rgba(201, 162, 39, 0.18), transparent 55%),
+    radial-gradient(ellipse 50% 40% at 10% 20%, rgba(245, 215, 110, 0.08), transparent 50%),
+    #070707;
+  min-height: 100%;
+  color: #fff;
+}
+
+.xforcz-hero {
+  background:
+    linear-gradient(120deg, rgba(245, 215, 110, 0.12), transparent 40%),
+    linear-gradient(180deg, #17120a 0%, #0a0a0a 100%);
+}
+
 .lbw-topbar-shine {
   background: linear-gradient(
     105deg,
@@ -457,6 +489,7 @@ body {
   .live-dot,
   .hero-corner,
   .lbw-topbar-shine,
+  .xforcz-topbar-shine,
   html {
     animation: none !important;
     scroll-behavior: auto;
