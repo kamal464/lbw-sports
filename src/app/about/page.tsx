@@ -5,6 +5,9 @@ import { whatsappUrl } from '@/lib/whatsapp'
 
 export const metadata: Metadata = {
   title: 'About Us',
+  description:
+    'LBW Sports Shop serves players across Hanamkonda and Mancherial with cricket gear, team kits, sportswear and multi-sport equipment. Play to live fit.',
+  alternates: { canonical: '/about' },
 }
 
 export default function AboutPage() {

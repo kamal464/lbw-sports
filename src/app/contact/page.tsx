@@ -2,7 +2,10 @@ import type { Metadata } from 'next'
 import { stores, brand } from '@/lib/stores'
 
 export const metadata: Metadata = {
-  title: 'Contact',
+  title: 'Contact & Store Locations',
+  description:
+    'Visit LBW Sports Shop in Hanamkonda or Mancherial, or enquire on WhatsApp. Call, map directions, email lbwsports@gmail.com and Instagram @lbw__sports.',
+  alternates: { canonical: '/contact' },
 }
 
 export default function ContactPage() {

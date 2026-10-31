@@ -14,7 +14,18 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { category } = await params
   const cat = categories.find((c) => c.slug === category)
-  return { title: cat?.name ?? 'Shop' }
+  if (!cat) return { title: 'Shop' }
+  return {
+    title: `${cat.name} Gear`,
+    description: `${cat.description} at LBW Sports Shop in Hanamkonda and Mancherial. Enquire on WhatsApp for stock.`,
+    alternates: { canonical: cat.href },
+    openGraph: {
+      title: `${cat.name} Gear | LBW Sports Shop`,
+      description: cat.description,
+      url: cat.href,
+      images: [{ url: cat.image.startsWith('http') ? cat.image : cat.image }],
+    },
+  }
 }
 
 export default async function CategoryPage({ params }: Props) {

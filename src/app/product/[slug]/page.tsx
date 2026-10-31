@@ -15,9 +15,23 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
   const product = getProductBySlug(slug)
+  if (!product) return { title: 'Gear' }
+  const sport = categories.find((item) => item.slug === product.category)
+  const description = `${product.description} Available at LBW Sports Shop in Hanamkonda and Mancherial. Enquire on WhatsApp.`
   return {
-    title: product?.name ?? 'Gear',
-    description: product?.description,
+    title: product.name,
+    description,
+    alternates: { canonical: `/product/${product.slug}` },
+    openGraph: {
+      title: `${product.name} | LBW Sports Shop`,
+      description,
+      url: `/product/${product.slug}`,
+      images: [{ url: product.image, alt: product.name }],
+      type: 'website',
+    },
+    other: {
+      'product:category': sport?.name ?? product.category,
+    },
   }
 }
 
